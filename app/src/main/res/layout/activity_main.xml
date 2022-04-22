@@ -9,9 +9,10 @@
     <com.duolier.rippleview.RippleView
         android:id="@+id/ripple"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:color="@color/cardview_dark_background"
-        app:count="10" />
+        app:count="4"
+        app:duration="7000" />
 
 </FrameLayout>

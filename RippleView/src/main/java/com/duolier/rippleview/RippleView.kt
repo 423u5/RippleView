@@ -65,6 +65,12 @@ class RippleView @JvmOverloads constructor(
     }
 
 
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
+        setMeasuredDimension(MeasureSpec.getSize(widthMeasureSpec), (MeasureSpec.getSize(widthMeasureSpec) * 0.75f).toInt())
+    }
+
+
     private fun validate() {
 
         _validate = true
